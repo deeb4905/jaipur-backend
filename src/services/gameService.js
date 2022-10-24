@@ -1,4 +1,4 @@
-import * as db from "../database"
+ import * as db from "../database"
 import { shuffle } from "lodash"
 
 // Return a shuffled starting deck except 3 camels
@@ -68,3 +68,4 @@ export function createGame(name) {
   db.saveGame(game)
   return game
 }
+
