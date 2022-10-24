@@ -1,4 +1,4 @@
- import * as db from "../database"
+import * as db from "../database"
 import { shuffle } from "lodash"
 
 // Return a shuffled starting deck except 3 camels
@@ -62,10 +62,9 @@ export function createGame(name) {
       4: shuffle([4, 6, 6, 4, 5, 5]),
       5: shuffle([8, 10, 9, 8, 10]),
     },
-     winnerId: undefined,
+    winnerId: undefined,
   }
   putCamelsFromHandToHerd(game)
   db.saveGame(game)
   return game
 }
-
